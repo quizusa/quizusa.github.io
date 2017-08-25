@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="Mobile-QBPL-Menu" class="BG-mobile navbar navbar-fixed-top" role="navigation">
+    <div class="mobile-verticalnav-menu">
+        <div id="mobile-vertical-menu-layer-1">
+            <a role="button" class="">
+                <div id="navbar-mobile-layer-my-account" class="user-bg bg-mobile-largeview-verticalnav-user-item"
+                     onclick="showMobileLayer(this.id)">
+                    <span class="glyphicon glyphicon-user"></span>
+                    <span class="user-verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span>
+                </div>
+            </a>
+
+            <div class="bg-mobile-largeview-verticalnav-item">Home</div>
+            <div id="navbar-mobile-layer-books-movies-more" class="bg-mobile-largeview-verticalnav-item"
+                 onclick="showMobileLayer(this.id)">Books, Movies &amp; More<span
+                    class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+            <div class="bg-mobile-largeview-verticalnav-item"><a href="/calendar">Calendar</a><span
+                    class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+            <div id="navbar-mobile-layer-research" class="bg-mobile-largeview-verticalnav-item"
+                 onclick="showMobileLayer(this.id)">Research<span
+                    class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+            <div id="navbar-mobile-layer-programs" class="bg-mobile-largeview-verticalnav-item"
+                 onclick="showMobileLayer(this.id)">Programs &amp; Activities<span
+                    class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+            <div class="bg-mobile-largeview-verticalnav-item"><a href="/support">Support the Library</a><span
+                    class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+            <div id="navbar-mobile-layer-about" class="bg-mobile-largeview-verticalnav-item"
+                 onclick="showMobileLayer(this.id)">About Us<span
+                    class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+
+            <div class="verticalnavLine"></div>
+
+            <div class="bg-mobile-largeview-verticalnav-item"><span class="icon-ic-donate"></span><span
+                    class="mobile-verticalnav-bottom-text"><a href="/donate">Donate</a></span></div>
+            <div class="bg-mobile-largeview-verticalnav-item"><span class="icon-ic-help2"></span><span
+                    class="mobile-verticalnav-bottom-text"><a href="/help">Help</a></span></div>
+            <div class="bg-mobile-largeview-verticalnav-item"><span class="icon-ic-distance"></span><span
+                    class="mobile-verticalnav-bottom-text"><a href="/about-us/locations">Locations</a></span></div>
+            <div class="bg-mobile-largeview-verticalnav-item"><span class="icon-ic-card"></span><span
+                    class="mobile-verticalnav-bottom-text"><a href="/card">Get a Library Card</a></span></div>
+            <div class="bg-mobile-largeview-verticalnav-item"><span class="icon-ic-utility-language2"></span><span
+                    class="mobile-verticalnav-bottom-text">Change Language</span><span
+                    class="language-verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+
+        </div>
+
+        <!--Static Mobile Third Layers-->
+        <div id="mobile-vertical-menu-layer-3" class="mobile-vertical-menu-navbar">
+        </div>
+        <!--End of Static Mobile Third Layers-->
+
+        <!--Static Mobile Second Layers-->
+
+        <div id="mobile-vertical-menu-navbar-mobile-layer-books-movies-more" class="mobile-vertical-menu-navbar">
+            <div id="mobile-vertical-menu-navbar-mobile-layer-books-movies-more-menu">
+                <div class="user-bg bg-mobile-largeview-verticalnav-user-item"
+                     onclick="backMobileLayer('navbar-mobile-layer-books-movies-more')"><span
+                        class="user-verticalnav-item-arrow-back glyphicon glyphicon-chevron-left"></span> Back
+                </div>
+                <div id="navbar-mobile-layer-bmm-books" class="bg-mobile-largeview-verticalnav-item"
+                     onclick="renderMobileSubMenuViewBooksBooks()">Books<span
+                        class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewBooksMovies()">Movies
+                    &amp; TV<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewBooksMusic()">
+                    Music<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <!-- <div class="bg-mobile-largeview-verticalnav-item">Video Games<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div> -->
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewBooksPeriodicals()">
+                    Periodicals<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+            </div>
+
+            <div class="verticalnavLine"></div>
+
+            <div class="bg-largeview-items-bottom"><a href="/books-movies-more">See All Books, Movies &amp; More</a>
+            </div>
+
+        </div>
+
+        <div id="mobile-vertical-menu-navbar-mobile-layer-research" class="mobile-vertical-menu-navbar">
+            <div id="mobile-vertical-menu-navbar-mobile-layer-research-menu">
+                <div class="user-bg bg-mobile-largeview-verticalnav-user-item"
+                     onclick="backMobileLayer('navbar-mobile-layer-research')"><span
+                        class="user-verticalnav-item-arrow-back glyphicon glyphicon-chevron-left"></span> Back
+                </div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewResearchDatabases()">
+                    Databases &amp; Articles<span
+                        class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewResearchSpecial()">
+                    Special Collections<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span>
+                </div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewResearchGovernment()">
+                    Government Documents<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span>
+                </div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewResearchArchives()">
+                    Genealogy Archives<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span>
+                </div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewResearchBorrow()">
+                    Borrow from Another Library<span
+                        class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item"
+                     onclick="renderMobileSubMenuViewResearchDemographics()">Demographics of Queens<span
+                        class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+            </div>
+
+            <div class="verticalnavLine"></div>
+
+            <div class="bg-largeview-items-bottom"><a href="/research">See All Research</a></div>
+
+        </div>
+
+        <div id="mobile-vertical-menu-navbar-mobile-layer-programs" class="mobile-vertical-menu-navbar">
+            <div id="mobile-vertical-menu-navbar-mobile-layer-programs-menu">
+                <div class="user-bg bg-mobile-largeview-verticalnav-user-item"
+                     onclick="backMobileLayer('navbar-mobile-layer-programs')"><span
+                        class="user-verticalnav-item-arrow-back glyphicon glyphicon-chevron-left"></span> Back
+                </div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewProgramsFeatured()">
+                    Featured Programs<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span>
+                </div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewProgramsArts()">Arts
+                    &amp; Culture<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewProgramsHealth()">
+                    Health &amp; Wellness<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span>
+                </div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewProgramsJob()">Job
+                    Help<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewProgramsKids()">For
+                    Kids<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewProgramsTeens()">For
+                    Teens<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item"
+                     onclick="renderMobileSubMenuViewProgramsOlderAdults()">For Older Adults<span
+                        class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item"
+                     onclick="renderMobileSubMenuViewProgramsNewAmericans()">For New Americans<span
+                        class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item"
+                     onclick="renderMobileSubMenuViewProgramsSmallBusiness()">For Small Business Owners<span
+                        class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+            </div>
+
+            <div class="verticalnavLine"></div>
+
+            <div class="bg-largeview-items-bottom"><a href="/program-activities">See All Programs &amp; Activities</a>
+            </div>
+
+        </div>
+
+        <div id="mobile-vertical-menu-navbar-mobile-layer-about" class="mobile-vertical-menu-navbar">
+            <div id="mobile-vertical-menu-navbar-mobile-layer-about-menu">
+                <div class="user-bg bg-mobile-largeview-verticalnav-user-item"
+                     onclick="backMobileLayer('navbar-mobile-layer-about')"><span
+                        class="user-verticalnav-item-arrow-back glyphicon glyphicon-chevron-left"></span> Back
+                </div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewAboutServices()">
+                    Services<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewAboutAccessibility()">
+                    Library Accessibility<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span>
+                </div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewAboutContact()">
+                    Contact Us<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewAboutLocations()">
+                    Locations<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewAboutNewsroom()">
+                    Newsroom<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewAboutGovernance()">
+                    Governance<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewAboutHistory()">
+                    History of Queens Library<span
+                        class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewAboutPlanning()">
+                    Planning for the future<span
+                        class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+                <div class="bg-mobile-largeview-verticalnav-item" onclick="renderMobileSubMenuViewAboutCareers()">
+                    Careers<span class="verticalnav-item-arrow glyphicon glyphicon-chevron-right"></span></div>
+            </div>
+
+            <div class="verticalnavLine"></div>
+
+            <div class="bg-largeview-items-bottom"><a href="/about-us">See All About Us</a></div>
+
+        </div>
+
+        <div id="mobile-vertical-menu-navbar-mobile-layer-my-account" class="mobile-vertical-menu-navbar">
+            <div class="user-bg bg-mobile-largeview-verticalnav-user-item"
+                 onclick="backMobileLayer('navbar-mobile-layer-my-account')"><span
+                    class="user-verticalnav-item-arrow-back glyphicon glyphicon-chevron-left"></span> Back
+            </div>
+            <a href="/my-account/overview">
+                <div class="bg-mobile-largeview-verticalnav-item">Account Overview</div>
+            </a>
+            <div class="bg-mobile-largeview-verticalnav-item">Edit Account</div>
+            <div id="navbar-mobile-layer-my-account-card" class="bg-mobile-largeview-verticalnav-item"
+                 onclick="showMobileLayer(this.id)">My Library Card
+            </div>
+            <div class="bg-mobile-largeview-verticalnav-item">My Checked Out</div>
+            <div class="bg-mobile-largeview-verticalnav-item">My Requests</div>
+            <div class="bg-mobile-largeview-verticalnav-item">My Wishlist</div>
+            <div class="bg-mobile-largeview-verticalnav-item">My Programs &amp; Events</div>
+            <div class="bg-mobile-largeview-verticalnav-item">My Fees</div>
+            <div class="bg-mobile-largeview-verticalnav-item">My Messages</div>
+            <div class="bg-mobile-largeview-verticalnav-item">My Interests</div>
+            <div class="bg-mobile-largeview-verticalnav-item">Friends of the Library</div>
+
+            <div class="verticalnavLine"></div>
+
+            <div class="bg-largeview-items-bottom"><a href="/user/logout" data-drupal-link-system-path="/user/logout">Sign
+                out<span class="navbar-myaccount-userinfo-right"><span
+                        class="glyphicon glyphicon-off"></span></span></a></div>
+
+        </div>
+
+        <!--end of Static Mobile Second Layers-->
+
+
+        <!--Static Mobile Third Layers-->
+        <div id="mobile-vertical-menu-navbar-mobile-layer-my-account-card" class="mobile-vertical-menu-navbar">
+            <div class="user-bg bg-mobile-largeview-verticalnav-user-item"
+                 onclick="backMobileLayer('navbar-mobile-layer-my-account-card')"><span
+                    class="user-verticalnav-item-arrow-back glyphicon glyphicon-chevron-left"></span> Back
+            </div>
+            <div class="navbar-mobile-my-account-card-barcode-box">
+                <p>ACCOUNT HOLDER</p>
+                <h4></h4>
+                <p>CARD EXPIRES</p>
+                <h4>07/27/2017</h4>
+                <p>QUEENS LIBRARY CARD NUMBER</p>
+                <h4></h4>
+                <div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!--end of Static Mobile Third Layers-->
+
+
+    </div>
+    <div id="mobile-navbar-default" class="BG-mobile-top container-fluid">
+      <span class="col-sm-2 col-md-2 BG-top-left mobile-hamburger-wrapper">
+        <span class="glyphicon glyphicon-menu-hamburger mobile-hamburger">
+        </span>
+      </span>
+
+        <span class="col-sm-8 col-md-8" align="center">
+        <a href=" / ">
+          <img src="/themes/renovate/logo.svg">
+        </a>
+      </span>
+
+        <span class="col-sm-2 col-md-2 mobile-search-icon" align="right">
+          <span class="icon-ic-search-mobile" onclick="mobileSearchInputOpen()"></span>
+      </span>
+    </div>
+    <div id="mobileSearchInput" class="BG-mobile-top container-fluid">
+        <div id="custom-search-input">
+            <div class="input-group col-md-12">
+              <span class="input-group-btn">
+                  <button id="mobile-search-btn" class="btn btn-danger" type="button">
+                      <span class="icon-ic-search-mobile"></span>
+                  </button>
+              </span>
+                <input id="mobile-search-query" type="text" class="search-query form-control" placeholder="Search">
+                <span class="input-group-btn">
+                  <button class="btn btn-danger" type="button">
+                      <span class="icon-ic-x2" onclick="mobileSearchInputClose()"></span>
+                  </button>
+              </span>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
