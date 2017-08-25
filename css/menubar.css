@@ -101,8 +101,7 @@ a:hover {
   position: absolute;
   width: 60%;
   margin: -100px 0 0 -50px;
-  padding: 50px;
-  padding-top: 125px;
+  padding: 125px 50px 50px;
   background: #f5f5f5;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
