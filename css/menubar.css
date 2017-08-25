@@ -14,17 +14,17 @@ body {
   padding: 0;
 
   /* make it look decent enough */
-  background: #232323;
-  color: #cdcdcd;
+  background: #263238;
+  color: #cfd8dc;
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 a {
   text-decoration: none;
-  color: #232323;
+  color: #cfd8dc;
   transition: color 0.3s ease;
 }
 a:hover {
-  color: tomato;
+  color: #bf360c;
 }
 #menuToggle {
   display: block;
@@ -77,7 +77,7 @@ a:hover {
 #menuToggle input:checked ~ span {
   opacity: 1;
   transform: rotate(45deg) translate(-2px, -1px);
-  background: #232323;
+  background: #212121;
 }
 /*
  * But let's hide the middle one.
@@ -103,7 +103,7 @@ a:hover {
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  background: #ededed;
+  background: #f5f5f5;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
