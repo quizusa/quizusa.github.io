@@ -1,5 +1,6 @@
 <!doctype html>
 <html class="no-js" lang="">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -14,37 +15,39 @@
     <link rel="stylesheet" href="css/main.css">
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 </head>
+
 <body>
-<!--[if lt IE 8]>
+    <!--[if lt IE 8]>
 <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<!-- Add your site or application content here -->
-<div style="text-align:center;line-height:100px;width:100%;height:100px;font-size:12px;">
-    <h1>How old are you?</h1>
-</div>
-<div class="main fluid">
-<form>
-    <div class="form-group">
-        <label for="dateOfBirth">Date of birth</label>
-        <input type="date" class="form-control" id="dateOfBirth" aria-describedby="dateOfBirth-help"
-               autofocus required>
-        <small id="dateOfBirth-help" class="form-text text-muted">You were born in the past.</small>
-        <button id="calculateAge" onclick="calculate()" type="button">Calculate age</button>
+    <!-- Add your site or application content here -->
+    <div style="text-align:center;line-height:100px;width:100%;height:100px;font-size:12px;">
+        <h1>How old are you?</h1>
     </div>
-</form>
-<div id="query">
-</div>
-<div id="results">
+    <div class="main fluid">
+        <form>
+            <div class="form-group">
+                <label for="dateOfBirth">Date of birth</label>
+                <input type="date" class="form-control" id="dateOfBirth" aria-describedby="dateOfBirth-help" autofocus
+                    required>
+                <small id="dateOfBirth-help" class="form-text text-muted">You were born in the past.</small>
+                <button id="calculateAge" onclick="calculate()" type="button">Calculate age</button>
+            </div>
+        </form>
+        <div id="query">
+        </div>
+        <div id="results">
 
-</div>
-</div>
+        </div>
+    </div>
 
 
-<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 </body>
+
 </html>
